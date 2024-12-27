@@ -23,6 +23,7 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+  object-fit: contain;
 }
 
 /* 6. Inherit fonts for form controls */
@@ -64,6 +65,58 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   background-color: white;
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 7vh;
+  padding: 1rem 3rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search input {
+  height: 1.6rem;
+  width: 40vw;
+  border: none;
+  border-radius: 2rem;
+  background-color: #b7c9d0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottom-header {
+  display: flex;
+  align-items: center;
+  max-height: 10vh;
+  justify-content: space-between;
+  padding: 0px 3rem 1rem 2.5rem;
+}
+
+.greetings {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border-radius: 25px;
+  background-color: #14162C;
+  color: white;
+  border: none;
+  padding: 0.4rem;
+  width: 8vw;
+  margin: 0px 0.5rem;
 }
 
 .sidebar {
